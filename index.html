@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#"> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.0/echarts.min.js" integrity="sha512-LYmkblt36DJsQPmCK+cK5A6Gp6uT7fLXQXAX0bMa763tf+DgiiH3+AwhcuGDAxM1SvlimjwKbkMPL3ZM1qLbag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Node js Server</title>
+</head>
+<body>
+    <div class="title">
+        <span class="title_span">
+            Node.js를 활용한 온/습도 표시
+        </span>
+    </div>
+    <div class="dht-div"> 
+        <img class="img_file" src="/temperature_icon-icons.com_65084.png"/>
+        <span class="dht-label">Temperature : </span>
+        <span id="temperature"></span> 
+        <span class="dht-div_sup"> °C</span>
+    </div> 
+    <div class="dht-div">
+        <img class="img_file" src="/humidity.png"/>
+        <span class="dht-label">Humidity : </span>
+        <span id="humidity"></span>
+        <span class="dht-div_sup"> %</span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="first_chart_div">
+        <div class="chart_div">
+            <canvas id="myChart"></canvas>
+            
+        </div>
+        <div class="chart_div">
+            <canvas id="myChart2" ></canvas>
+        </div>
+    </div>
+    
+    <div class="button_wrap">
+        <button class="led" id="led_1">LED1</button>
+        <button class="led" id="led_2">LED2</button>
+        <button class="led" id="led_3">LED3</button>
+        <button class="led" id="led_4">LED4</button>
+        <button class="led" id="led_5">LED5</button>
+        <button class="led" id="led_6">LED6</button>
+        <button class="led" id="led_7">LED7</button>
+        <button class="led" id="led_8">LED8</button>
+        <button class="led" id="led_9">LED9</button>
+
+        
+    </div> 
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.js" integrity="sha512-VJ6+sp2E5rFQk05caiXXzQd1wBABpjEj1r5kMiLmGAAgwPItw1YpqsCCBtq8Yr1x6C49/mTpRdXtq8O2RcZhlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/12cf434b98.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="weather.js"></script>
+
+
+
+    
+</body>
+
+</html>

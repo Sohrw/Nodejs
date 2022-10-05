@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus {
+  outline: none;
+}
+a {
+  color :inherit;
+  text-decoration: none;
+}
+
+/*-----SETTING LINE----------*/
+body {
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-image: url(./Mont_Blanc_Mountains_Lake_Chamonix_France_Bing_5K_1366x768.jpg);
+    background-size: cover;
+
+}
+.dht-div { 
+    border: 10px;
+    padding : 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ani; 
+    animation-duration: 3s;
+    animation-duration: leaner;
+
+}
+@keyframes ani {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.7;
+    }
+}
+.title {
+    background-color: black;
+    padding-left: 20px;
+    padding-top : 30px;
+    padding-bottom: 20px;
+    animation: ani;
+    animation-duration: 2s;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    opacity: 0.7;
+
+}
+
+.title span{
+    font-size: 50px;
+    font-weight: 600;
+    color : white;
+}
+
+.dht-div span {
+    font-size: 35px;
+    color : white;
+    
+    
+}
+.dht-div .dht-label {
+    padding-right: 7px;
+}
+.img_file {
+    width:50px;
+    height:50px;
+    padding-right: 15px;
+}
+.first_chart_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart_div { 
+    background-color: rgba(255,255,255,0.5);
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    /* animation: ani;
+    animation-duration: 3s; */
+}
+.chart_div canvas {
+    color : white;
+}
+.button_wrap { 
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ani;
+    animation-duration: 3s;
+    
+}
+.led {
+    width : 50px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+    
+}   
+.led.on {
+    width : 50px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: black;
+    color : white;
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+.led:hover {
+    background-color: gray;
+    color: white;
+}
+#weather {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 20px;
+    animation: ani;
+}
+#weather span {
+    color: white;
+    margin : 10px;
+}
